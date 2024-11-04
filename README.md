@@ -17,6 +17,6 @@ This project is for the ICDE2025 paper, which leverages distributed hybrid intel
 
 ## implementation
 - Download the datasets.
-- Pre-process the raw data with data_process.py. The process is used to divide the data into training sets for pre-trained models, samples for test time adaptation, and samples for validation in test time. Meanwhile, The process filters some useless features.
+- Pre-process the raw data with data_process.py. The process is used to divide the data into training sets for pre-trained models, samples for test time adaptation, and samples for validation in test time. Meanwhile, the process filters out some useless features.
 - Train the model from random initial models to obtain a pre-train model. And we store the pre-trained model in  the folder named savemodels
 - Run Fedtest_top2.py, the parameters used for test time adaptation are stored in utils. The results can be accessed via Tensorboard.
